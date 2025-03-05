@@ -1,0 +1,1457 @@
+//script di risorsa generato con Microsoft Visual C++.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 2.
+//
+
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+[!if !SPLITTER && !PROJECT_STYLE_EXPLORER]
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+[!endif]
+[!if COMPOUND_DOC_NONE]
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+[!endif]
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])\r\n"
+	"LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]\r\n"
+	"#pragma code_page([!output CODE_PAGE])\r\n"
+	"#include ""[!output RES_PATH]\\[!output PROJECT_NAME].rc2""  // risorse non modificate da Microsoft Visual C++\r\n"
+	"#include ""afxres.rc""  	// Componenti standard\r\n"
+[!if PRINTING]
+	"#include ""afxprint.rc""	// stampa/risorse anteprima di stampa\r\n"
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	"#include ""afxolecl.rc""	// risorse contenitore OLE\r\n"
+[!endif]
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+	"#include ""afxolesv.rc""	// risorse server OLE\r\n"
+[!endif]
+[!if OLEDB || ODBC]
+	"#include ""afxdb.rc""		// Risorse database\r\n"
+[!endif]
+	"#endif\r\n"
+[!if AUTOMATION]
+    "1 TYPELIB ""[!output PROJECT_NAME].tlb""\r\n"
+[!endif]
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icona
+//
+
+// Icona con il valore ID minimo posto per primo in modo da garantire che l'icona dell'applicazione
+// rimanga la stessa in tutti i sistemi.
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+IDR_MAINFRAME           ICON         "[!output RES_PATH]\\[!output PROJECT_NAME].ico"
+[!if DOCVIEW && !APP_TYPE_DLG]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         ICON         "[!output RES_PATH]\\[!output PROJECT_NAME]Doc.ico"
+[!endif]
+#endif
+[!if DOCKING_TOOLBAR]
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP      "res\\Toolbar.bmp"
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+[!if APP_TYPE_MDI]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP				BITMAP   	"res\\IToolbar.bmp"
+[!else]
+IDR_SRVR_INPLACE				BITMAP	 	"res\\IToolbar.bmp"
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Barra degli strumenti
+//
+
+IDR_MAINFRAME TOOLBAR   16, 15
+BEGIN
+[!if !DB_VIEW_NO_FILE]
+[!if DOCVIEW]
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+	SEPARATOR
+[!else]
+[!if APP_TYPE_MDI]
+    BUTTON      ID_FILE_NEW
+	SEPARATOR
+[!endif]
+[!endif]
+[!endif]
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+	SEPARATOR
+[!if DOCVIEW]
+    BUTTON      ID_FILE_PRINT
+[!endif]
+[!if OLEDB || ODBC]
+	SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+	SEPARATOR
+[!endif]
+[!if LIST_VIEW]
+	SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+[!endif]
+    BUTTON      ID_APP_ABOUT
+[!if CONTEXT_HELP]
+    BUTTON      ID_CONTEXT_HELP
+[!endif]
+END
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+[!if APP_TYPE_MDI]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP TOOLBAR   16, 15
+[!else]
+IDR_SRVR_INPLACE TOOLBAR   16, 15
+[!endif]
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+[!if !DB_VIEW_NO_FILE]
+[!if OLEDB || ODBC]
+	SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+[!endif]
+[!endif]
+	SEPARATOR
+    BUTTON      ID_APP_ABOUT
+[!if CONTEXT_HELP]
+    BUTTON      ID_CONTEXT_HELP
+[!endif]
+END
+[!endif]
+
+[!endif]
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+[!if APP_TYPE_MDI]
+IDR_MAINFRAME MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+[!endif]
+[!if DOCVIEW]
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Chiudi",                      ID_FILE_CLOSE
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "&Visualizza"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if PROJECT_STYLE_EXPLORER]
+        MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+[!if LIST_VIEW]
+        MENUITEM SEPARATOR
+        MENUITEM "Icone &grandi",                ID_VIEW_LARGEICON
+        MENUITEM "Ico&ne piccole",                ID_VIEW_SMALLICON
+        MENUITEM "&Elenco",                       ID_VIEW_LIST
+        MENUITEM "&Dettagli",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "&Disponi icone"
+        BEGIN
+            MENUITEM "Per &nome",                    ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "Di&sposizione automatica",               ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "Allin&ea icone",              ID_VIEW_LINEUP
+[!endif]
+	END
+[!endif]
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+[!endif]
+		MENUITEM "&Chiudi",                      ID_FILE_CLOSE
+[!if DOCVIEW]
+		MENUITEM "&Salva\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "Sal&va con nome...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "&Visualizza"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if PROJECT_STYLE_EXPLORER]
+        MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!if LIST_VIEW]
+        MENUITEM SEPARATOR
+        MENUITEM "Icone &grandi",                ID_VIEW_LARGEICON
+        MENUITEM "Ico&ne piccole",                ID_VIEW_SMALLICON
+        MENUITEM "&Elenco",                       ID_VIEW_LIST
+        MENUITEM "&Dettagli",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "&Disponi icone"
+        BEGIN
+            MENUITEM "Per &nome",                    ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "Di&sposizione automatica",               ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "Allin&ea icone",              ID_VIEW_LINEUP
+[!endif]
+[!endif]
+	END
+[!endif]
+	POPUP "Fi&nestra"
+	BEGIN
+[!if DOCVIEW]
+		MENUITEM "&Nuova finestra",                 ID_WINDOW_NEW
+[!endif]
+		MENUITEM "&Sovrapponi",                    ID_WINDOW_CASCADE
+		MENUITEM "&Affianca",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "&Disponi icone",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_CNTR_IP MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "&Chiudi",                      ID_FILE_CLOSE
+		MENUITEM "&Salva\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "Sal&va con nome...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "Fi&nestra"
+	BEGIN
+		MENUITEM "&Nuova finestra",                 ID_WINDOW_NEW
+		MENUITEM "&Sovrapponi",                    ID_WINDOW_CASCADE
+		MENUITEM "&Affianca",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "&Disponi icone",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+END
+[!endif]
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_EMB MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "&Chiudi",                      ID_FILE_CLOSE
+		MENUITEM "A&ggiorna\tCtrl+S",        		ID_FILE_UPDATE
+[!if !MINI_SERVER]
+		MENUITEM "Salva copia con &nome...",            ID_FILE_SAVE_COPY_AS
+[!endif]		
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "&Visualizza"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+[!endif]
+	END
+[!endif]
+	POPUP "Fi&nestra"
+	BEGIN
+		MENUITEM "&Nuova finestra",                 ID_WINDOW_NEW
+		MENUITEM "&Sovrapponi",                    ID_WINDOW_CASCADE
+		MENUITEM "&Affianca",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "&Disponi icone",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP MENU   
+BEGIN
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR]
+	POPUP "&Visualizza"
+	BEGIN
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+	END
+[!endif]
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+[!endif]
+
+[!else]
+IDR_MAINFRAME MENU   
+BEGIN
+[!if MINI_SERVER]
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&Esci",                       ID_APP_EXIT
+		MENUITEM SEPARATOR
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+[!else]
+	POPUP "&File"
+	BEGIN
+[!if APP_TYPE_MTLD]
+		MENUITEM "Nuovo &frame",                  ID_FILE_NEW_FRAME
+[!endif]
+[!if DOCVIEW]
+[!if !DB_VIEW_NO_FILE]
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "&Salva\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "Sal&va con nome...",                 ID_FILE_SAVE_AS
+[!endif]
+[!if PRINTING]
+[!if !DB_VIEW_NO_FILE]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if DB_VIEW_NO_FILE]
+[!if PRINTING]
+		MENUITEM SEPARATOR
+[!endif]
+[!else]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+[!endif]
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR || SPLITTER]
+	POPUP "&Visualizza"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if SPLITTER]
+		MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+[!endif]
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+[!endif]
+END
+
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_CNTR_INPLACE MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+[!if APP_TYPE_MTLD]
+		MENUITEM "Nuovo &frame",                  ID_FILE_NEW_FRAME
+[!endif]
+		MENUITEM "&Nuovo\tCtrl+N",                ID_FILE_NEW
+		MENUITEM "&Apri...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "&Salva\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "Sal&va con nome...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "File recenti",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_SRVR_INPLACE MENU   
+BEGIN
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR]
+	POPUP "&Visualizza"
+	BEGIN
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+	END
+[!endif]
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+IDR_SRVR_EMBEDDED MENU   
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "A&ggiorna\tCtrl+S",        		ID_FILE_UPDATE
+[!if !MINI_SERVER]
+		MENUITEM "Salva copia con &nome...",            ID_FILE_SAVE_COPY_AS
+[!endif]		
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "S&tampa...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "Anteprima di sta&mpa",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "Imp&osta stampante...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "In&via...",					ID_FILE_SEND_MAIL
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "&Esci",                       ID_APP_EXIT
+	END
+	POPUP "&Modifica"
+	BEGIN
+		MENUITEM "&Annulla\tCTRL+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "Ta&glia\tCTRL+X",                ID_EDIT_CUT
+		MENUITEM "&Copia\tCTRL+C",               ID_EDIT_COPY
+		MENUITEM "&Incolla\tCTRL+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "Incolla &speciale...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Seleziona &tutto\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Trova...\tCTRL+F",            ID_EDIT_FIND
+        MENUITEM "T&rova successivo\tF3",              ID_EDIT_REPEAT
+        MENUITEM "Sostit&uisci\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "Inserisci &nuovo oggetto...",       ID_OLE_INSERT_NEW
+        MENUITEM "Colle&gamenti...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "Proprietà &oggetto\\tALT+Invio", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "&Record"
+	BEGIN
+		MENUITEM "&Primo record"				ID_RECORD_FIRST
+		MENUITEM "&Record precedente"				ID_RECORD_PREV
+		MENUITEM "Record &successivo"					ID_RECORD_NEXT
+		MENUITEM "&Ultimo record"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR || SPLITTER]
+	POPUP "&Visualizza"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "&Barra degli strumenti",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "&Barra di stato",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if SPLITTER]
+		MENUITEM "&Dividi",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+[!endif]
+	POPUP "&?"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "&Guida in linea",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "&Informazioni su [!output PROJECT_NAME]...",          ID_APP_ABOUT
+	END
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Tasto di scelta rapida
+//
+
+[!if !DOCVIEW]
+IDR_MAINFRAME ACCELERATORS   
+BEGIN
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+[!if APP_TYPE_MDI]
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL,NOINVERT
+[!endif]
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL,NOINVERT
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT,NOINVERT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT,NOINVERT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY ,NOINVERT
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT,NOINVERT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT,NOINVERT
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL,NOINVERT
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL,NOINVERT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT,NOINVERT
+	VK_F1,          ID_HELP,                VIRTKEY,NOINVERT
+[!endif]
+END
+[!else]
+[!if !MINI_SERVER]
+IDR_MAINFRAME ACCELERATORS   
+BEGIN
+[!if !DB_VIEW_NO_FILE]
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!endif]
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]
+END
+[!endif]
+[!endif]
+
+[!if APP_TYPE_MDI]
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_CNTR_IP ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP ACCELERATORS   
+BEGIN
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,   	VIRTKEY,NOINVERT
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_EMB ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_UPDATE,         VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!else]
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_CNTR_INPLACE ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_SRVR_INPLACE ACCELERATORS   
+BEGIN
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,   	VIRTKEY,NOINVERT
+END
+IDR_SRVR_EMBEDDED ACCELERATORS   
+BEGIN
+	"S",            ID_FILE_UPDATE,         VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Finestra di dialogo
+//
+
+IDD_ABOUTBOX DIALOGEX   0, 0, 235, 55
+CAPTION "Informazioni su [!output PROJECT_NAME]"
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+	LTEXT           "[!output PROJECT_NAME] Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+	LTEXT           "Copyright (C) [!output YEAR]",IDC_STATIC,40,25,119,8
+	DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+[!if FORM_VIEW || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_FORM	DIALOGEX  0, 0, 320, 200
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: inserire in questa finestra di dialogo i controlli del form.",IDC_STATIC,24,42,
+		280,8
+END
+[!endif]
+
+[!if TOOLBAR_STYLE_REBAR]
+IDR_MAINFRAME	DIALOGEX  0, 0, 330, 16
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: creare il layout della barra della finestra di dialogo.",IDC_STATIC,12,4,
+		300,8
+END
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP DIALOGEX  0, 0, 330, 16
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: creare la barra della finestra di dialogo sul posto.",IDC_STATIC,12,4,
+		300,8
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Versione
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "[!output HEX_LCID][!output HEX_CODE_PAGE]"
+		BEGIN 
+            VALUE "CompanyName", "TODO: <Nome società>"
+            VALUE "FileDescription", "TODO: <Descrizione file>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "[!output PROJECT_NAME].exe"
+            VALUE "LegalCopyright", "TODO: (c) <Nome società>. Tutti i diritti riservati."
+			VALUE "OriginalFilename","[!output PROJECT_NAME].exe"
+            VALUE "[ProductName]", "TODO: <Nome prodotto>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Conversione", 0x[!output HEX_LCID], [!output CODE_PAGE]
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+[!if FORM_VIEW || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+    IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+[!endif]
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Tabella delle stringhe
+//
+
+[!if !COMPOUND_DOC_NONE || AUTOMATION || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW || SOCKETS]
+STRINGTABLE  
+BEGIN
+[!if !COMPOUND_DOC_NONE || AUTOMATION || ACTIVEX_CONTROLS || OLEDB || ACCESSIBILITY]
+	IDP_OLE_INIT_FAILED   	"Inizializzazione OLE non riuscita. Assicurarsi che la versione delle librerie OLE sia corretta."
+[!endif]
+[!if MINI_SERVER]
+	IDP_USE_INSERT_OBJECT	"Questo server può essere eseguito solo da un'applicazione contenitore."
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	IDP_FAILED_TO_CREATE	"Impossibile creare l'oggetto. Assicurarsi che l'oggetto sia immesso nel Registro di sistema."
+[!endif]
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	IDP_FAILED_OPEN_DATABASE	"Impossibile aprire il database."
+[!endif]
+[!if SOCKETS]
+	IDP_SOCKETS_INIT_FAILED	"Inizializzazione socket di Windows non riuscita."
+[!endif]
+END
+[!endif]
+STRINGTABLE   
+BEGIN
+// Le applicazioni non mac rimuovono le due sottostringhe eccedenti.
+[!if APP_TYPE_MDI]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]"
+[!if HAS_SUFFIX]  // ha un suffisso file e così anche il tipo di file shell.
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]\n[!output FILTER_NAME]\n.[!output FILE_EXTENSION]\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!else]
+[!if !DOCVIEW]
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]"
+[!else]
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]\n\n\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!endif]
+[!endif]
+[!else]
+[!if !DOCVIEW]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]"
+[!else]
+[!if HAS_SUFFIX]  // ha un suffisso file.
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]\n\n[!output FILE_NEW_NAME_SHORT]\n[!output FILTER_NAME]\n.[!output FILE_EXTENSION]\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!else]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]\n\n[!output FILE_NEW_NAME_SHORT]\n\n\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!endif]
+
+[!endif]
+[!endif]
+END
+STRINGTABLE   
+BEGIN
+	AFX_IDS_APP_TITLE       "[!output PROJECT_NAME]"
+[!if CONTEXT_HELP]
+	AFX_IDS_IDLEMESSAGE     "Per aprire la Guida, premere F1."
+	AFX_IDS_HELPMODEMESSAGE "Selezionare un oggetto per il quale si desidera visualizzare la Guida."
+[!else]
+	AFX_IDS_IDLEMESSAGE     "Pronto"
+[!endif]
+END
+STRINGTABLE  
+BEGIN
+	ID_INDICATOR_EXT        "EST"
+	ID_INDICATOR_CAPS       "MAIUSC"
+	ID_INDICATOR_NUM        "NUM"
+	ID_INDICATOR_SCRL       "SCORR"
+	ID_INDICATOR_OVR        "SSC"
+	ID_INDICATOR_REC        "REG"
+[!if DO_KANA]
+	ID_INDICATOR_KANA		"KANA"
+[!endif]
+END
+STRINGTABLE  
+BEGIN
+[!if APP_TYPE_MTLD]
+	ID_FILE_NEW_FRAME		"Crea un nuovo frame\nNuovo frame"
+[!endif]
+[!if APP_TYPE_MDI || DOCVIEW]
+[!if !DB_VIEW_NO_FILE]
+	ID_FILE_NEW             "Crea un nuovo documento.\nNuovo"
+[!if DOCVIEW]
+	ID_FILE_OPEN            "Apre un documento esistente.\nApri"
+[!endif]
+	ID_FILE_CLOSE           "Chiude il documento attivo.\nChiudi"
+[!endif]
+[!if DOCVIEW]
+	ID_FILE_SAVE            "Salva il documento attivo.\nSalva"
+	ID_FILE_SAVE_AS         "Salva il documento attivo con un nuovo nome.\nSalva con nome"
+[!endif]
+[!endif]
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+	ID_FILE_UPDATE			"Aggiorna il contenitore per visualizzare eventuali modifiche.\nAggiorna"
+	ID_FILE_SAVE_COPY_AS	"Salva una copia del documento attivo con un nuovo nome.\nSalva copia"
+[!endif]
+[!if PRINTING]
+	ID_FILE_PAGE_SETUP      "Modifica le opzioni di stampa.\nImposta pagina"
+	ID_FILE_PRINT_SETUP     "Modifica la stampante e le opzioni di stampa.\nImposta stampante"
+	ID_FILE_PRINT           "Stampa il documento attivo.\nStampa"
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+	ID_FILE_PRINT_PREVIEW   "Visualizza pagine intere.\nAnteprima di stampa"
+[!endif] 
+[!endif]
+[!if MAPI]
+	ID_FILE_SEND_MAIL		"Invia il documento attivo tramite posta elettronica.\nInvia"
+[!endif]
+	ID_APP_ABOUT            "Visualizza informazioni sul programma, il numero di versione e il copyright.\nInformazioni su"
+	ID_APP_EXIT             "Chiude l'applicazione e chiede di salvare i documenti.\nEsci"
+[!if CONTEXT_HELP]
+	ID_CONTEXT_HELP         "Visualizza la Guida sulle finestre, i pulsanti e i menu selezionati.\n?"
+	ID_HELP_INDEX           "Apre la Guida.\nGuida in linea"
+	ID_HELP_FINDER			"Visualizza la Guida in linea.\nGuida in linea"
+	ID_HELP_USING           "Visualizza informazioni sull'uso della Guida.\nGuida"
+	ID_HELP                 "Visualizza le informazioni della Guida per l'operazione o il comando corrente.\nGuida"
+[!endif]
+[!if DOCVIEW]
+	ID_FILE_MRU_FILE1       "Apre questo documento"
+	ID_FILE_MRU_FILE2       "Apre questo documento"
+	ID_FILE_MRU_FILE3       "Apre questo documento"
+	ID_FILE_MRU_FILE4       "Apre questo documento"
+	ID_FILE_MRU_FILE5       "Apre questo documento"
+	ID_FILE_MRU_FILE6       "Apre questo documento"
+	ID_FILE_MRU_FILE7       "Apre questo documento"
+	ID_FILE_MRU_FILE8       "Apre questo documento"
+	ID_FILE_MRU_FILE9       "Apre questo documento"
+	ID_FILE_MRU_FILE10      "Apre questo documento"
+	ID_FILE_MRU_FILE11      "Apre questo documento"
+	ID_FILE_MRU_FILE12      "Apre questo documento"
+	ID_FILE_MRU_FILE13      "Apre questo documento"
+	ID_FILE_MRU_FILE14      "Apre questo documento"
+	ID_FILE_MRU_FILE15      "Apre questo documento"
+	ID_FILE_MRU_FILE16      "Apre questo documento"
+[!endif]
+	ID_NEXT_PANE            "Passa al riquadro successivo.\nSuccessivo"
+	ID_PREV_PANE            "Torna al riquadro precedente.\nPrecedente"
+[!if APP_TYPE_MDI]
+[!if DOCVIEW]
+	ID_WINDOW_NEW           "Apre un'altra finestra per il documento attivo.\nNuova finestra"
+[!endif]
+	ID_WINDOW_ARRANGE       "Dispone le icone nella parte inferiore della finestra.\nDisponi icone"
+	ID_WINDOW_CASCADE       "Dispone le finestre in modo che si sovrappongano.\nSovrapponi finestre"
+	ID_WINDOW_TILE_HORZ     "Dispone le finestre senza sovrapporle.\nAffianca finestre"
+	ID_WINDOW_TILE_VERT     "Dispone le finestre senza sovrapporle.\nAffianca finestre"
+[!endif]
+	ID_WINDOW_SPLIT         "Suddivide la finestra attiva in riquadri.\nDividi"
+	ID_EDIT_CLEAR           "Cancella la selezione.\nCancella"
+	ID_EDIT_CLEAR_ALL       "Cancella tutto.\nCancella tutto"
+	ID_EDIT_COPY            "Copia la selezione e la inserisce negli Appunti.\nCopia"
+	ID_EDIT_CUT             "Taglia la selezione e la inserisce negli Appunti.\nTaglia"
+	ID_EDIT_FIND            "Trova il testo specificato.\nTrova"
+	ID_EDIT_PASTE           "Inserisce il contenuto degli Appunti.\nIncolla"
+	ID_EDIT_REPEAT          "Ripete l'ultima operazione.\nRipeti"
+	ID_EDIT_REPLACE         "Sostituisce il testo specificato con altro testo.\nSostituisci"
+	ID_EDIT_SELECT_ALL      "Seleziona l'intero documento.\nSeleziona tutto"
+	ID_EDIT_UNDO            "Annulla l'ultima operazione.\nAnnulla"
+	ID_EDIT_REDO            "Ripristina il risultato dell'ultima azione annullata.\nRipristina"
+[!if DOCKING_TOOLBAR]
+	ID_VIEW_TOOLBAR         "Mostra o nasconde la barra degli strumenti.\nBarra degli strumenti"
+[!endif]
+[!if STATUS_BAR]
+	ID_VIEW_STATUS_BAR      "Mostra o nasconde la barra di stato.\nBarra di stato"
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	ID_EDIT_PASTE_LINK      "Inserisce il contenuto degli Appunti e un collegamento all'origine dei dati.\nIncolla collegamento"
+	ID_EDIT_PASTE_SPECIAL	"Inserisce il contenuto degli Appunti con opzioni.\nIncolla speciale"
+	ID_OLE_INSERT_NEW       "Inserisce un nuovo oggetto incorporato.\nNuovo oggetto"
+	ID_OLE_EDIT_LINKS       "Modifica gli oggetti collegati.\nModifica collegamenti"
+	ID_OLE_VERB_FIRST       "Attiva un oggetto incorporato o collegato."
+	57873					"Attiva un oggetto incorporato o collegato."
+	57874					"Attiva un oggetto incorporato o collegato."
+	57875					"Attiva un oggetto incorporato o collegato."
+	ID_OLE_EDIT_CONVERT		"Converte l'oggetto in un tipo diverso.\nConverti oggetto"
+[!endif]
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	ID_RECORD_NEXT			"Passa al record successivo.\nRecord successivo"
+	ID_RECORD_PREV			"Torna al record precedente.\nRecord precedente"
+	ID_RECORD_LAST			"Passa all'ultimo record.\nUltimo record"
+	ID_RECORD_FIRST			"Passa al primo record.\nPrimo record"
+[!endif]
+END
+
+STRINGTABLE  
+BEGIN
+	AFX_IDS_SCSIZE          "Cambia le dimensioni della finestra."
+	AFX_IDS_SCMOVE          "Cambia la posizione della finestra."
+	AFX_IDS_SCMINIMIZE      "Riduce la finestra a icona."
+	AFX_IDS_SCMAXIMIZE      "Ingrandisce la finestra a schermo intero."
+	AFX_IDS_SCNEXTWINDOW    "Passa alla finestra del documento successiva."
+	AFX_IDS_SCPREVWINDOW    "Passa alla finestra del documento precedente."
+	AFX_IDS_SCCLOSE         "Chiude la finestra attiva e chiede di salvare i documenti."
+	AFX_IDS_SCRESTORE       "Ripristina le dimensioni normali della finestra."
+	AFX_IDS_SCTASKLIST      "Attiva l'Elenco attività."
+[!if APP_TYPE_MDI]
+	AFX_IDS_MDICHILD        "Attiva la finestra."
+[!endif]
+[!if PRINTING]
+	AFX_IDS_PREVIEW_CLOSE   "Chiude la modalità Anteprima di stampa.\nAnnulla Anteprima"
+[!endif]
+END
+
+[!if LIST_VIEW]
+
+STRINGTABLE  
+BEGIN
+    ID_VIEW_SMALLICON       "Visualizza gli elementi usando icone piccole.\nIcone piccole"
+    ID_VIEW_LARGEICON       "Visualizza gli elementi usando icone grandi.\nIcone grandi"
+    ID_VIEW_LIST            "Mostra gli oggetti in un elenco.\nElenco"
+    ID_VIEW_DETAILS         "Mostra informazioni di ogni oggetto nella finestra.\nDettagli"
+    ID_VIEW_LINEUP          "Dispone le icone su una griglia."
+    ID_VIEW_BYNAME          "Dispone le icone in ordine alfabetico."
+END
+
+STRINGTABLE  
+BEGIN
+    ID_VIEW_AUTOARRANGE         "Dispone le icone su una griglia."
+END
+[!endif]
+#endif
+[!if MANIFEST]
+
+#ifdef _UNICODE
+IDR_MANIFEST	RT_MANIFEST	"res\\[!output PROJECT_NAME].manifest"
+#endif
+[!endif]
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generato dalla risorsa TEXTINCLUDE 3.
+//
+
+[!if !SPLITTER && !PROJECT_STYLE_EXPLORER]
+#define _AFX_NO_SPLITTER_RESOURCES
+[!endif]
+[!if COMPOUND_DOC_NONE]
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+[!endif]
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+#include "[!output RES_PATH]\\[!output PROJECT_NAME].rc2"  // risorse non Microsoft Visual C++ modificate
+#include "afxres.rc"  	// Componenti standard
+[!if PRINTING]
+#include "afxprint.rc"  // stampa/risorse anteprima di stampa
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+#include "afxolecl.rc"  // risorse contenitore OLE
+[!endif]
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+#include "afxolesv.rc"  // risorse server OLE
+[!endif]
+[!if OLEDB || ODBC]
+#include "afxdb.rc"		// Risorse database
+[!endif]
+#endif
+[!if AUTOMATION]
+
+1 TYPELIB "[!output PROJECT_NAME].tlb"
+[!endif]
+#endif    // not APSTUDIO_INVOKED

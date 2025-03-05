@@ -1,0 +1,12 @@
+:Base [!output PROJECT_NAME].hlp
+1 Menüs
+2 Menü Datei=menu_file
+2 Menü Bearbeiten=menu_edit
+2 Menü Ansicht=menu_view
+[!if OLEDB || ODBC]
+2 Menü Datensatz=menu_record
+[!endif]
+2 Menü Fenster=menu_window
+2 Menü Hilfe=menu_help
+1 <<Fügen Sie hier Ihre anwendungsspezifischen Themen hinzu>>
+2 <<Fügen Sie hier Ihre Themenverweise hinzu>>=main_index

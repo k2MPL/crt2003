@@ -1,0 +1,12 @@
+:Base [!output PROJECT_NAME].hlp
+1 Menus
+2 Menu Fichier=menu_file
+2 Menu Edition=menu_edit
+2 Menu Affichage=menu_view
+3 [!if OLEDB || ODBC]
+2 Menu Enregistrement=menu_record
+3 [!endif]
+2 Menu Fenêtre=menu_window
+2 Menu Aide (?)=menu_help
+1 <<ajoutez ici les rubriques spécifiques à votre application>>
+2 <<ajoutez les liens ici>>=main_index

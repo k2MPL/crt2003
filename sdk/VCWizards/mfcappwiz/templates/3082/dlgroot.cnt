@@ -1,0 +1,3 @@
+:Base [!output PROJECT_NAME].hlp
+1 <<agregue aquí los temas específicos de su aplicación>>
+2 <<agregar aquí los saltos a temas>>=HIDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG

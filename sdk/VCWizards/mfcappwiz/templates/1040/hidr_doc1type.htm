@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+
+<TITLE>(Modifica del documento)</TITLE>
+
+</HEAD>
+
+
+
+<BODY>
+
+
+
+
+
+<P><A NAME="hidr_doc1type"></A><B>Modifica del documento</B></P>
+
+
+
+<P>&lt;&lt; Scrivere qui la Guida specifica dell'applicazione con le informazioni generali sulla procedura di modifica di un documento mediante l'uso dell'applicazione.  </P>
+
+
+
+<P>Se l'applicazione supporta diversi tipi di documento e si desidera avere un argomento della Guida diverso per ogni tipo, occorre utilizzare l'ID
+
+di contesto della Guida generato con l'esecuzione del file MAKEHELP.BAT, a sua volta generato dalla creazione guidata
+
+dell'applicazione. In alternativa, eseguire MAKEHM come indicato di seguito:</P>
+
+
+
+<P>makehm IDR_HIDR_,0x2000 resource.h</P>
+
+
+
+<P>Se il simbolo IDR_ per uno dei tipi di documento è, ad esempio, IDR_CHARTTYPE, l'ID di contesto della Guida
+
+generato da MAKEHM sarà HIDR_CHARTTYPE.</P>
+
+
+
+<P>Nota: la creazione guidata dell'applicazione definisce l'ID di contesto HIDR_DOC1TYPE utilizzato da questo argomento della Guida per il primo tipo di documento supportato dall'applicazione.
+
+La creazione guidata genera un alias del file HPJ per l'applicazione, associando HIDR_DOC1TYPE al simbolo HIDR_ generato da MAKEHM per il tipo di documento. &gt;&gt;</P>
+
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,12 @@
+:Base [!output PROJECT_NAME].hlp
+1 功能表
+2 檔案功能表=menu_file
+2 編輯功能表=menu_edit
+2 檢視功能表=menu_view
+[!if OLEDB || ODBC]
+2 記錄功能表=menu_record
+[!endif]
+2 視窗功能表=menu_window
+2 說明功能表=menu_help
+1 <<在此處加入您的特定應用程式主題>>
+2 <<在此處加入您的主題跳躍點>>=main_index

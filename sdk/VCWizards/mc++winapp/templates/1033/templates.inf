@@ -1,0 +1,10 @@
+readme.txt
+root.cpp
+OpenFile | root.h
+ChildOf(root.h) | root.resX
+AssemblyInfo.cpp
+stdafx.cpp
+stdafx.h
+app.rc
+resource.h
+CopyOnly | app.ico

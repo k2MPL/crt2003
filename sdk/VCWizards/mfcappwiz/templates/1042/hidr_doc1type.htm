@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=ks_c_5601-1987">
+
+<TITLE>(문서 수정)</TITLE>
+
+</HEAD>
+
+
+
+<BODY>
+
+
+
+
+
+<P><A NAME="hidr_doc1type"></A><B>문서 수정</B></P>
+
+
+
+<P>&lt;&lt; 여기에 응용 프로그램에서 문서를 수정하는 방법에 대한 개요를 설명하는 응용 프로그램 관련 도움말을 작성하십시오.  </P>
+
+
+
+<P>응용 프로그램에서 여러 문서 형식을 지원할 경우, 각각에 대해 다른 도움말 항목을 작성하려면 응용 프로그램 마법사에서 생성하는
+
+MAKEHELP.BAT 파일을 실행하여 생성되는 도움말 컨텍스트 ID를 사용하십시오.
+
+또는 다음과 같이 MAKEHM을 실행하십시오.</P>
+
+
+
+<P>makehm IDR_HIDR_,0x2000 resource.h</P>
+
+
+
+<P>예를 들어, 특정 문서의 형식에 대한 IDR_ 기호가 IDR_CHARTTYPE일 경우 MAKEHM에서 생성되는 도움말 컨텍스트 
+
+ID는 HIDR_CHARTTYPE가 됩니다.</P>
+
+
+
+<P>참고: 응용 프로그램 마법사는 응용 프로그램에서 지원하는 첫 문서 형식에 이 도움말 항목에서 사용되는 HIDR_DOC1TYPE 도움말 컨텍스트 ID를 
+
+정의합니다. 응용 프로그램 마법사는 HIDR_DOC1TYPE을 해당 문서 형식의 MAKEHM에서 생성된 HIDR_에 매핑하여 응용 프로그램의 .hpj 파일에 별칭을 만듭니다. &gt;&gt;</P>
+
+
+
+</BODY>
+
+</HTML>
+

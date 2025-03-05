@@ -1,0 +1,286 @@
+// Microsoft Visual C++에서 생성한 리소스 스크립트입니다.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 2 리소스에서 생성되었습니다.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])\r\n"
+	"LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]\r\n"
+	"#pragma code_page([!output CODE_PAGE])\r\n"
+	"#include ""[!output RES_PATH]\\[!output PROJECT_NAME].rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+	"#include ""afxres.rc""  	// 표준 구성 요소\r\n"
+	"#endif\r\n"
+[!if AUTOMATION]
+    "1 TYPELIB ""[!output PROJECT_NAME].tlb""\r\n"
+[!endif]
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// 아이콘
+//
+
+// 응용 프로그램 아이콘이 모든 시스템에서 일관성을 갖도록
+// 가장 낮은 ID 값을 갖는 아이콘이 맨 처음 배치됩니다.
+IDR_MAINFRAME           ICON         "res\\[!output PROJECT_NAME].ico"
+[!endif]
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// 대화 상자
+//
+[!if ABOUT_BOX]
+
+IDD_ABOUTBOX DIALOGEX   0, 0, 235, 55
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[!output PROJECT_NAME] 정보"
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "[!output PROJECT_NAME] Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) [!output YEAR]",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7, 50,16,WS_GROUP
+END
+[!endif]
+
+[!if HTML_DIALOG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG    HTML         "[!output PROJECT_NAME].htm"
+
+/////////////////////////////////////////////////////////////////////////////
+
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG DIALOGEX  0, 0, 320, 200 
+STYLE DS_SHELLFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+[!if MAIN_FRAME_THICK_FRAME]
+ | WS_THICKFRAME
+[!else]
+ | DS_MODALFRAME
+[!endif]
+[!if MAIN_FRAME_SYSTEM_MENU]
+ | WS_SYSMENU
+[!endif]
+[!if MAIN_FRAME_MINIMIZE_BOX]
+ | WS_MINIMIZEBOX
+[!endif]
+[!if MAIN_FRAME_MAXIMIZE_BOX]
+ | WS_MAXIMIZEBOX
+[!endif]
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "[!output DIALOG_TITLE]"
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+END
+[!else]
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG DIALOGEX  0, 0, 320, 200 
+STYLE DS_SHELLFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+[!if MAIN_FRAME_THICK_FRAME]
+ | WS_THICKFRAME
+[!else]
+ | DS_MODALFRAME
+[!endif]
+[!if MAIN_FRAME_SYSTEM_MENU]
+ | WS_SYSMENU
+[!endif]
+[!if MAIN_FRAME_MINIMIZE_BOX]
+ | WS_MINIMIZEBOX
+[!endif]
+[!if MAIN_FRAME_MAXIMIZE_BOX]
+ | WS_MAXIMIZEBOX
+[!endif]
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "[!output DIALOG_TITLE]"
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,263,7,50,16
+    PUSHBUTTON      "취소",IDCANCEL,263,25,50,16
+[!if CONTEXT_HELP]
+    PUSHBUTTON      "도움말(&H)",ID_HELP,263,44,50,16
+[!endif]
+	CTEXT           "TODO: 여기에 대화 상자 컨트롤을 배치합니다.",IDC_STATIC,10,96,300,8
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 버전
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "[!output HEX_LCID][!output HEX_CODE_PAGE]"
+		BEGIN 
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "[!output PROJECT_NAME].exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+			VALUE "OriginalFilename","[!output PROJECT_NAME].exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "변환", 0x[!output HEX_LCID], [!output CODE_PAGE]
+    END
+END
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+[!if ABOUT_BOX]
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+[!endif]
+    IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193 
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 문자열 테이블
+//
+
+[!if ABOUT_BOX]
+STRINGTABLE  
+BEGIN
+    IDS_ABOUTBOX            "[!output PROJECT_NAME] 정보(&A)..."
+END
+[!endif]
+[!endif]
+[!if APP_TYPE_DLG]
+[!if SOCKETS || AUTOMATION]
+
+STRINGTABLE  
+BEGIN
+[!if AUTOMATION || ACCESSIBILITY]
+	IDP_OLE_INIT_FAILED   	"OLE를 초기화할 수 없습니다. OLE 라이브러리 버전이 올바른지 확인하십시오."
+[!endif]
+[!if SOCKETS]
+	IDP_SOCKETS_INIT_FAILED	"Windows 소켓을 초기화하지 못했습니다."
+[!endif]
+END
+[!endif]
+[!else]
+[!if SOCKETS]
+
+STRINGTABLE  
+BEGIN
+	IDP_SOCKETS_INIT_FAILED	"Windows 소켓을 초기화하지 못했습니다."
+END
+[!endif]
+[!endif]
+
+
+#endif
+[!if MANIFEST]
+#ifdef _UNICODE
+IDR_MANIFEST	RT_MANIFEST	"res\\[!output PROJECT_NAME].manifest"
+#endif
+[!endif]
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 3 리소스에서 생성되었습니다.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+#include "[!output RES_PATH]\\[!output PROJECT_NAME].rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"  	// 표준 구성 요소
+#endif
+[!if AUTOMATION]
+
+1 TYPELIB "[!output PROJECT_NAME].tlb"
+[!endif]
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

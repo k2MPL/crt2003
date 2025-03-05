@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&lt;&lt;YourApp&gt;&gt; 도움말 색인">
+		<param name="Local" value="main_index.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="메뉴">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="파일 메뉴 명령">
+			<param name="Local" value="menu_file.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="편집 메뉴 명령">
+			<param name="Local" value="menu_edit.htm">
+			</OBJECT>
+[!if OLEDB || ODBC]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="레코드 메뉴 명령">
+			<param name="Local" value="menu_record.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="보기 메뉴 명령">
+			<param name="Local" value="menu_view.htm">
+			</OBJECT>
+[!if APP_TYPE_MDI]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="창 메뉴 명령">
+			<param name="Local" value="menu_window.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="도움말 메뉴 명령">
+			<param name="Local" value="menu_help.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="상태 표시줄">
+		<param name="Local" value="afx_hidw_status_bar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="도구 모음">
+		<param name="Local" value="afx_hidw_toolbar.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

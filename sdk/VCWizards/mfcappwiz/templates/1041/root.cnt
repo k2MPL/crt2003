@@ -1,0 +1,13 @@
+:Base [!output PROJECT_NAME].hlp
+1 メニュー
+2 [ファイル] メニュー=menu_file
+2 [編集] メニュー=menu_edit
+2 [表示] メニュー=menu_view
+[!if OLEDB || ODBC]
+2 [レコード] メニュー=menu_record
+[!endif]
+2 [ウィンドウ] メニュー=menu_window
+2 [ヘルプ] メニュー=menu_help
+1 <<アプリケーション固有の情報をここに記述してください>>
+2 <<ヘルプ トピックをここに記述してください>>=main_index
+

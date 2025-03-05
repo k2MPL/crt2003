@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="[!output SAFE_ITEM_NAME]" 
+                  targetNamespace="http://tempuri.org/[!output SAFE_ITEM_NAME].xsd"
+                  elementFormDefault="qualified"
+                  attributeFormDefault="qualified"
+                  xmlns="http://tempuri.org/[!output SAFE_ITEM_NAME].xsd"
+                  xmlns:mstns="http://tempuri.org/[!output SAFE_ITEM_NAME].xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="[!output SAFE_ITEM_NAME]" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded"></xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

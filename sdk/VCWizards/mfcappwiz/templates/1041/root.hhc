@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=shift_jis">
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&lt;&lt;YourApp&gt;&gt; ヘルプ インデックス">
+		<param name="Local" value="main_index.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="メニュー">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[ファイル] メニューのコマンド">
+			<param name="Local" value="menu_file.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[編集] メニューのコマンド">
+			<param name="Local" value="menu_edit.htm">
+			</OBJECT>
+[!if OLEDB || ODBC]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[記録] メニューのコマンド">
+			<param name="Local" value="menu_record.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[表示] メニューのコマンド">
+			<param name="Local" value="menu_view.htm">
+			</OBJECT>
+[!if APP_TYPE_MDI]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[ウィンドウ] メニューのコマンド">
+			<param name="Local" value="menu_window.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="[ヘルプ] メニューのコマンド">
+			<param name="Local" value="menu_help.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ステータス バー">
+		<param name="Local" value="afx_hidw_status_bar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ツール バー">
+		<param name="Local" value="afx_hidw_toolbar.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

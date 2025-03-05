@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&lt;&lt;YourApp&gt;&gt; Hilfeindex">
+		<param name="Local" value="main_index.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Menüs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Datei'">
+			<param name="Local" value="menu_file.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Bearbeiten'">
+			<param name="Local" value="menu_edit.htm">
+			</OBJECT>
+[!if OLEDB || ODBC]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Datensatz'">
+			<param name="Local" value="menu_record.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Ansicht'">
+			<param name="Local" value="menu_view.htm">
+			</OBJECT>
+[!if APP_TYPE_MDI]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Fenster'">
+			<param name="Local" value="menu_window.htm">
+			</OBJECT>
+[!endif]
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Befehle im Menü 'Hilfe'">
+			<param name="Local" value="menu_help.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Statusleiste">
+		<param name="Local" value="afx_hidw_status_bar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Symbolleiste">
+		<param name="Local" value="afx_hidw_toolbar.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

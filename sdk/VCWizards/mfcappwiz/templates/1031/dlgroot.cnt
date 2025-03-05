@@ -1,0 +1,3 @@
+:Base [!output PROJECT_NAME].hlp
+1 <<FEen Sie Ihre anwendungsspezifischen Themen hier hinzu>> 
+2 <<FEen Sie Ihre Themenverweise hier hinzu>>=HIDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG

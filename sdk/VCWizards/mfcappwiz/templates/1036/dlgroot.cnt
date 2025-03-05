@@ -1,0 +1,3 @@
+:Base [!output PROJECT_NAME].hlp
+1 <<ajoutez ici les rubriques spécifiques à votre application>>
+2 <<ajoutez les liens ici>>=HIDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG

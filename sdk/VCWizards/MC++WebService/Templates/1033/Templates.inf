@@ -1,0 +1,14 @@
+OpenFile | root.h
+root.cpp
+root.asmx
+ChildOf(root.h) | root.resX
+readme.txt
+AssemblyInfo.cpp
+Web.config
+stdafx.h
+stdafx.cpp
+Global.asax
+Global.asax.h
+app.rc
+resource.h
+CopyOnly | app.ico

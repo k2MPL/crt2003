@@ -1,0 +1,4 @@
+VSWIZARD 7.0
+Wizard=VsWizard.VsWizardEngine.7.1
+Param="WIZARD_NAME = Win32Wiz"
+Param="CONSOLE_TYPE_ONLY = false"

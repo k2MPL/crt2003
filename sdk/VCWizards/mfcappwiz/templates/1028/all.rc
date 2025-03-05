@@ -1,0 +1,1456 @@
+// Microsoft Visual C++ 產生的資源指令碼。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// 已從 TEXTINCLUDE 2 資源產生。
+//
+
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+[!if !SPLITTER && !PROJECT_STYLE_EXPLORER]
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+[!endif]
+[!if COMPOUND_DOC_NONE]
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+[!endif]
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])\r\n"
+	"LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]\r\n"
+	"#pragma code_page([!output CODE_PAGE])\r\n"
+	"#include ""[!output RES_PATH]\\[!output PROJECT_NAME].rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+	"#include ""afxres.rc""  	// 標準元件\r\n"
+[!if PRINTING]
+	"#include ""afxprint.rc""	// 列印/預覽列印資源\r\n"
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	"#include ""afxolecl.rc""	// OLE 容器資源\r\n"
+[!endif]
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+	"#include ""afxolesv.rc""	// OLE 伺服器資源\r\n"
+[!endif]
+[!if OLEDB || ODBC]
+	"#include ""afxdb.rc""		// 資料庫資源\r\n"
+[!endif]
+	"#endif\r\n"
+[!if AUTOMATION]
+    "1 TYPELIB ""[!output PROJECT_NAME].tlb""\r\n"
+[!endif]
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 圖示
+//
+
+// 先放置有最低 ID 的圖示，確保應用程式圖示在所有系統上保持一致。
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+IDR_MAINFRAME           ICON         "[!output RES_PATH]\\[!output PROJECT_NAME].ico"
+[!if DOCVIEW && !APP_TYPE_DLG]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         ICON         "[!output RES_PATH]\\[!output PROJECT_NAME]Doc.ico"
+[!endif]
+#endif
+[!if DOCKING_TOOLBAR]
+/////////////////////////////////////////////////////////////////////////////
+//
+// 點陣圖
+//
+
+IDR_MAINFRAME           BITMAP      "res\\Toolbar.bmp"
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+[!if APP_TYPE_MDI]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP				BITMAP   	"res\\IToolbar.bmp"
+[!else]
+IDR_SRVR_INPLACE				BITMAP	 	"res\\IToolbar.bmp"
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 工具列
+//
+
+IDR_MAINFRAME TOOLBAR   16, 15
+BEGIN
+[!if !DB_VIEW_NO_FILE]
+[!if DOCVIEW]
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+	SEPARATOR
+[!else]
+[!if APP_TYPE_MDI]
+    BUTTON      ID_FILE_NEW
+	SEPARATOR
+[!endif]
+[!endif]
+[!endif]
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+	SEPARATOR
+[!if DOCVIEW]
+    BUTTON      ID_FILE_PRINT
+[!endif]
+[!if OLEDB || ODBC]
+	SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+	SEPARATOR
+[!endif]
+[!if LIST_VIEW]
+	SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+[!endif]
+    BUTTON      ID_APP_ABOUT
+[!if CONTEXT_HELP]
+    BUTTON      ID_CONTEXT_HELP
+[!endif]
+END
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+[!if APP_TYPE_MDI]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP TOOLBAR   16, 15
+[!else]
+IDR_SRVR_INPLACE TOOLBAR   16, 15
+[!endif]
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+[!if !DB_VIEW_NO_FILE]
+[!if OLEDB || ODBC]
+	SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+[!endif]
+[!endif]
+	SEPARATOR
+    BUTTON      ID_APP_ABOUT
+[!if CONTEXT_HELP]
+    BUTTON      ID_CONTEXT_HELP
+[!endif]
+END
+[!endif]
+
+[!endif]
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+/////////////////////////////////////////////////////////////////////////////
+//
+// 功能表
+//
+
+[!if APP_TYPE_MDI]
+IDR_MAINFRAME MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+[!endif]
+[!if DOCVIEW]
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "檢視(&V)"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "狀態列(&S)",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if PROJECT_STYLE_EXPLORER]
+        MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+[!if LIST_VIEW]
+        MENUITEM SEPARATOR
+        MENUITEM "大圖示(&G)",                ID_VIEW_LARGEICON
+        MENUITEM "小圖示(&M)",                ID_VIEW_SMALLICON
+        MENUITEM "清單(&L)",                       ID_VIEW_LIST
+        MENUITEM "詳細資料(&D)",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "排列圖示(&I)"
+        BEGIN
+            MENUITEM "依名稱(&N)",                    ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "自動排列(&A)",               ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "對齊圖示(&E)",              ID_VIEW_LINEUP
+[!endif]
+	END
+[!endif]
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+[!endif]
+		MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+[!if DOCVIEW]
+		MENUITEM "儲存檔案(&S)\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "檢視(&V)"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "狀態列(&S)",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if PROJECT_STYLE_EXPLORER]
+        MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!if LIST_VIEW]
+        MENUITEM SEPARATOR
+        MENUITEM "大圖示(&G)",                ID_VIEW_LARGEICON
+        MENUITEM "小圖示(&M)",                ID_VIEW_SMALLICON
+        MENUITEM "清單(&L)",                       ID_VIEW_LIST
+        MENUITEM "詳細資料(&D)",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "排列圖示(&I)"
+        BEGIN
+            MENUITEM "依名稱(&N)",                    ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "自動排列(&A)",               ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "對齊圖示(&E)",              ID_VIEW_LINEUP
+[!endif]
+[!endif]
+	END
+[!endif]
+	POPUP "視窗(&W)"
+	BEGIN
+[!if DOCVIEW]
+		MENUITEM "開新視窗(&N)",                 ID_WINDOW_NEW
+[!endif]
+		MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+		MENUITEM "並排顯示(&T)",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "排列圖示(&A)",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_CNTR_IP MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+[!if APP_TYPE_MDI || DOCVIEW]
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+		MENUITEM "儲存檔案(&S)\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "視窗(&W)"
+	BEGIN
+		MENUITEM "開新視窗(&N)",                 ID_WINDOW_NEW
+		MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+		MENUITEM "並排顯示(&T)",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "排列圖示(&A)",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+END
+[!endif]
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_EMB MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+[!if DOCVIEW]
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+		MENUITEM "更新(&U)\tCtrl+S",        		ID_FILE_UPDATE
+[!if !MINI_SERVER]
+		MENUITEM "另存複本(&A)...",            ID_FILE_SAVE_COPY_AS
+[!endif]		
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR]
+	POPUP "檢視(&V)"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "狀態列(&S)",                 ID_VIEW_STATUS_BAR
+[!endif]
+	END
+[!endif]
+	POPUP "視窗(&W)"
+	BEGIN
+		MENUITEM "開新視窗(&N)",                 ID_WINDOW_NEW
+		MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+		MENUITEM "並排顯示(&T)",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "排列圖示(&A)",              ID_WINDOW_ARRANGE
+[!if SPLITTER]
+		MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP MENU   
+BEGIN
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR]
+	POPUP "檢視(&V)"
+	BEGIN
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+	END
+[!endif]
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+[!endif]
+
+[!else]
+IDR_MAINFRAME MENU   
+BEGIN
+[!if MINI_SERVER]
+	POPUP "檔案(&F)"
+	BEGIN
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+		MENUITEM SEPARATOR
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+[!else]
+	POPUP "檔案(&F)"
+	BEGIN
+[!if APP_TYPE_MTLD]
+		MENUITEM "新增框架(&F)",                  ID_FILE_NEW_FRAME
+[!endif]
+[!if DOCVIEW]
+[!if !DB_VIEW_NO_FILE]
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "儲存檔案(&S)\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+[!endif]
+[!if PRINTING]
+[!if !DB_VIEW_NO_FILE]
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if DB_VIEW_NO_FILE]
+[!if PRINTING]
+		MENUITEM SEPARATOR
+[!endif]
+[!else]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+		MENUITEM SEPARATOR
+[!endif]
+[!endif]
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR || SPLITTER]
+	POPUP "檢視(&V)"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "狀態列(&S)",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if SPLITTER]
+		MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+[!endif]
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+[!endif]
+END
+
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_CNTR_INPLACE MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+[!if APP_TYPE_MTLD]
+		MENUITEM "新增框架(&F)",                  ID_FILE_NEW_FRAME
+[!endif]
+		MENUITEM "開新檔案(&N)\tCtrl+N",                ID_FILE_NEW
+		MENUITEM "開啟舊檔(&O)...\tCtrl+O",            ID_FILE_OPEN
+		MENUITEM "儲存檔案(&S)\tCtrl+S",               ID_FILE_SAVE
+		MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+[!if MRU_SIZE != 0]
+		MENUITEM SEPARATOR
+		MENUITEM "最近使用的檔案",                 ID_FILE_MRU_FILE1,GRAYED
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_SRVR_INPLACE MENU   
+BEGIN
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR]
+	POPUP "檢視(&V)"
+	BEGIN
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+	END
+[!endif]
+	MENUITEM SEPARATOR
+	MENUITEM SEPARATOR
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+IDR_SRVR_EMBEDDED MENU   
+BEGIN
+	POPUP "檔案(&F)"
+	BEGIN
+		MENUITEM "更新(&U)\tCtrl+S",        		ID_FILE_UPDATE
+[!if !MINI_SERVER]
+		MENUITEM "另存複本(&A)...",            ID_FILE_SAVE_COPY_AS
+[!endif]		
+[!if PRINTING]
+		MENUITEM SEPARATOR
+		MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+		MENUITEM "預覽列印(&V)",              ID_FILE_PRINT_PREVIEW
+[!endif]
+		MENUITEM "列印設定(&R)...",             ID_FILE_PRINT_SETUP
+[!endif]
+[!if MAPI]
+		MENUITEM SEPARATOR
+		MENUITEM "傳送(&D)...",					ID_FILE_SEND_MAIL
+[!endif]
+		MENUITEM SEPARATOR
+		MENUITEM "結束(&X)",                       ID_APP_EXIT
+	END
+	POPUP "編輯(&E)"
+	BEGIN
+		MENUITEM "復原(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪下(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "複製(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+[!if CONTAINER || CONTAINER_SERVER]
+        MENUITEM "選擇性貼上(&S)...",           ID_EDIT_PASTE_SPECIAL
+[!if RICH_EDIT_VIEW]
+        MENUITEM "全選(&L)\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "找下一個(&I)\tF3",              ID_EDIT_REPEAT
+        MENUITEM "取代(&E)\tCtrl+H",            ID_EDIT_REPLACE
+[!endif]
+        MENUITEM SEPARATOR
+        MENUITEM "插入新物件(&N)...",       ID_OLE_INSERT_NEW
+        MENUITEM "連結(&K)...",                   ID_OLE_EDIT_LINKS
+[!if RICH_EDIT_VIEW]
+        MENUITEM "物件屬性(&R)\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+[!endif]
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+[!endif]
+	END
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	POPUP "資料錄(&R)"
+	BEGIN
+		MENUITEM "第一筆資料錄(&F)"				ID_RECORD_FIRST
+		MENUITEM "上一筆資料錄(&P)"				ID_RECORD_PREV
+		MENUITEM "下一筆資料錄(&N)"					ID_RECORD_NEXT
+		MENUITEM "最後一筆資料錄(&L)"					ID_RECORD_LAST
+	END
+[!endif]
+[!if DOCKING_TOOLBAR || STATUS_BAR || SPLITTER]
+	POPUP "檢視(&V)"
+	BEGIN
+[!if DOCKING_TOOLBAR]
+		MENUITEM "工具列(&T)",                    ID_VIEW_TOOLBAR
+[!endif]
+[!if STATUS_BAR]
+		MENUITEM "狀態列(&S)",                 ID_VIEW_STATUS_BAR
+[!endif]
+[!if SPLITTER]
+		MENUITEM "分割視窗(&P)",                      ID_WINDOW_SPLIT
+[!endif]
+	END
+[!endif]
+	POPUP "說明(&H)"
+	BEGIN
+[!if CONTEXT_HELP]
+		MENUITEM "說明主題(&H)",                ID_HELP_FINDER
+		MENUITEM SEPARATOR
+[!endif]
+		MENUITEM "關於 [!output PROJECT_NAME](&A)...",          ID_APP_ABOUT
+	END
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 對應鍵
+//
+
+[!if !DOCVIEW]
+IDR_MAINFRAME ACCELERATORS   
+BEGIN
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+[!if APP_TYPE_MDI]
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL,NOINVERT
+[!endif]
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL,NOINVERT
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT,NOINVERT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT,NOINVERT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY ,NOINVERT
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT,NOINVERT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL,NOINVERT
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT,NOINVERT
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL,NOINVERT
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL,NOINVERT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT,NOINVERT
+	VK_F1,          ID_HELP,                VIRTKEY,NOINVERT
+[!endif]
+END
+[!else]
+[!if !MINI_SERVER]
+IDR_MAINFRAME ACCELERATORS   
+BEGIN
+[!if !DB_VIEW_NO_FILE]
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!endif]
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]
+END
+[!endif]
+[!endif]
+
+[!if APP_TYPE_MDI]
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_CNTR_IP ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP ACCELERATORS   
+BEGIN
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,   	VIRTKEY,NOINVERT
+END
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_EMB ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_UPDATE,         VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!else]
+[!if CONTAINER || CONTAINER_SERVER]
+IDR_CNTR_INPLACE ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_SRVR_INPLACE ACCELERATORS   
+BEGIN
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,   	VIRTKEY,NOINVERT
+END
+IDR_SRVR_EMBEDDED ACCELERATORS   
+BEGIN
+	"S",            ID_FILE_UPDATE,         VIRTKEY,CONTROL
+[!if PRINTING]
+	"P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+[!endif]
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+[!if RICH_EDIT_VIEW]
+	"A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+	"F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+	VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+	"H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+[!endif]
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+[!if CONTEXT_HELP]
+	VK_F1,          ID_CONTEXT_HELP,        VIRTKEY,SHIFT
+	VK_F1,          ID_HELP,                VIRTKEY
+[!endif]
+[!if CONTAINER_SERVER]
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,   	VIRTKEY,NOINVERT
+[!endif]    
+END
+[!endif]
+
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 對話方塊
+//
+
+IDD_ABOUTBOX DIALOGEX   0, 0, 235, 55
+CAPTION "關於 [!output PROJECT_NAME]"
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+	LTEXT           "[!output PROJECT_NAME] Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+	LTEXT           "Copyright (C) [!output YEAR]",IDC_STATIC,40,25,119,8
+	DEFPUSHBUTTON   "確定",IDOK,178,7,50,16,WS_GROUP
+END
+
+[!if FORM_VIEW || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_FORM	DIALOGEX  0, 0, 320, 200
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: 在此對話方塊上放置表單控制項。",IDC_STATIC,24,42,
+		280,8
+END
+[!endif]
+
+[!if TOOLBAR_STYLE_REBAR]
+IDR_MAINFRAME	DIALOGEX  0, 0, 330, 16
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: 配置對話方塊列",IDC_STATIC,12,4,
+		300,8
+END
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+IDR_[!output SAFE_DOC_TYPE_NAME]TYPE_SRVR_IP DIALOGEX  0, 0, 330, 16
+STYLE DS_SHELLFONT | WS_CHILD
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+	LTEXT	"TODO: 配置直接對話方塊列",IDC_STATIC,12,4,
+		300,8
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 版本
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "[!output HEX_LCID][!output HEX_CODE_PAGE]"
+		BEGIN 
+            VALUE "CompanyName", "TODO: <公司名稱>"
+            VALUE "FileDescription", "TODO: <檔案說明>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "[!output PROJECT_NAME].exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名稱>.  All rights reserved."
+			VALUE "OriginalFilename","[!output PROJECT_NAME].exe"
+            VALUE "ProductName", "TODO: <產品名稱>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x[!output HEX_LCID], [!output CODE_PAGE]
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+[!if FORM_VIEW || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+    IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+[!endif]
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 字串資料表
+//
+
+[!if !COMPOUND_DOC_NONE || AUTOMATION || OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW || SOCKETS]
+STRINGTABLE  
+BEGIN
+[!if !COMPOUND_DOC_NONE || AUTOMATION || ACTIVEX_CONTROLS || OLEDB || ACCESSIBILITY]
+	IDP_OLE_INIT_FAILED   	"OLE 初始化失敗。請確認 OLE 程式庫的版本是否正確。"
+[!endif]
+[!if MINI_SERVER]
+	IDP_USE_INSERT_OBJECT	"只能從容器應用程式執行此伺服器。"
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	IDP_FAILED_TO_CREATE	"建立物件失敗。請確認該物件已登錄在系統登錄中。"
+[!endif]
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	IDP_FAILED_OPEN_DATABASE	"無法開啟資料庫。"
+[!endif]
+[!if SOCKETS]
+	IDP_SOCKETS_INIT_FAILED	"Windows 通訊端安裝失敗。"
+[!endif]
+END
+[!endif]
+STRINGTABLE   
+BEGIN
+// 目標非麥金塔的應用程式移除兩個額外的子字串
+[!if APP_TYPE_MDI]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]"
+[!if HAS_SUFFIX]  // 也有檔案後置字元 - Shell 檔類型
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]\n[!output FILTER_NAME]\n.[!output FILE_EXTENSION]\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!else]
+[!if !DOCVIEW]
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]"
+[!else]
+	IDR_[!output SAFE_DOC_TYPE_NAME]TYPE         "\n[!output SAFE_DOC_TYPE_NAME]\n[!output FILE_NEW_NAME_SHORT]\n\n\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!endif]
+[!endif]
+[!else]
+[!if !DOCVIEW]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]"
+[!else]
+[!if HAS_SUFFIX]  // 有後置檔案
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]\n\n[!output FILE_NEW_NAME_SHORT]\n[!output FILTER_NAME]\n.[!output FILE_EXTENSION]\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!else]
+	IDR_MAINFRAME           "[!output MAIN_FRAME_CAPTION]\n\n[!output FILE_NEW_NAME_SHORT]\n\n\n[!output FILE_TYPE_ID]\n[!output FILE_NEW_NAME_LONG]"
+[!endif]
+
+[!endif]
+[!endif]
+END
+STRINGTABLE   
+BEGIN
+	AFX_IDS_APP_TITLE       "[!output PROJECT_NAME]"
+[!if CONTEXT_HELP]
+	AFX_IDS_IDLEMESSAGE     "如需說明，請按 F1"
+	AFX_IDS_HELPMODEMESSAGE "選取要取得說明的物件"
+[!else]
+	AFX_IDS_IDLEMESSAGE     "就緒"
+[!endif]
+END
+STRINGTABLE  
+BEGIN
+	ID_INDICATOR_EXT        "EXT"
+	ID_INDICATOR_CAPS       "CAP"
+	ID_INDICATOR_NUM        "NUM"
+	ID_INDICATOR_SCRL       "SCRL"
+	ID_INDICATOR_OVR        "OVR"
+	ID_INDICATOR_REC        "REC"
+[!if DO_KANA]
+	ID_INDICATOR_KANA		"KANA"
+[!endif]
+END
+STRINGTABLE  
+BEGIN
+[!if APP_TYPE_MTLD]
+	ID_FILE_NEW_FRAME		"建立新框架 \n新框架"
+[!endif]
+[!if APP_TYPE_MDI || DOCVIEW]
+[!if !DB_VIEW_NO_FILE]
+	ID_FILE_NEW             "建立新文件\n開新檔案"
+[!if DOCVIEW]
+	ID_FILE_OPEN            "開啟現有文件\n開啟舊檔"
+[!endif]
+	ID_FILE_CLOSE           "關閉使用中文件\n關閉檔案"
+[!endif]
+[!if DOCVIEW]
+	ID_FILE_SAVE            "儲存使用中文件\n儲存檔案"
+	ID_FILE_SAVE_AS         "將使用中文件以新名稱儲存\n另存新檔"
+[!endif]
+[!endif]
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+	ID_FILE_UPDATE			"更新容器以顯示任何變更\n更新"
+	ID_FILE_SAVE_COPY_AS	"將使用中文件的複本以新名稱儲存\n另存複本"
+[!endif]
+[!if PRINTING]
+	ID_FILE_PAGE_SETUP      "變更列印選項\n版面設定"
+	ID_FILE_PRINT_SETUP     "變更印表機及列印選項\n列印設定"
+	ID_FILE_PRINT           "列印使用中文件\n列印"
+[!if !HTML_VIEW && !HTML_EDITVIEW]
+	ID_FILE_PRINT_PREVIEW   "顯示整頁\n預覽列印"
+[!endif] 
+[!endif]
+[!if MAPI]
+	ID_FILE_SEND_MAIL		"透過電子郵件傳送使用中文件\n傳送郵件"
+[!endif]
+	ID_APP_ABOUT            "顯示程式資訊、版本號碼及著作權\n關於"
+	ID_APP_EXIT             "結束應用程式; 提示使用者儲存文件\n結束"
+[!if CONTEXT_HELP]
+	ID_CONTEXT_HELP         "顯示所按按鈕、功能表與視窗的說明\n說明"
+	ID_HELP_INDEX           "開啟說明檔\n說明主題"
+	ID_HELP_FINDER			"列出說明主題\n說明主題"
+	ID_HELP_USING           "顯示如何使用說明的指示\n說明"
+	ID_HELP                 "顯示目前工作或命令的說明\n說明"
+[!endif]
+[!if DOCVIEW]
+	ID_FILE_MRU_FILE1       "開啟這份文件"
+	ID_FILE_MRU_FILE2       "開啟這份文件"
+	ID_FILE_MRU_FILE3       "開啟這份文件"
+	ID_FILE_MRU_FILE4       "開啟這份文件"
+	ID_FILE_MRU_FILE5       "開啟這份文件"
+	ID_FILE_MRU_FILE6       "開啟這份文件"
+	ID_FILE_MRU_FILE7       "開啟這份文件"
+	ID_FILE_MRU_FILE8       "開啟這份文件"
+	ID_FILE_MRU_FILE9       "開啟這份文件"
+	ID_FILE_MRU_FILE10      "開啟這份文件"
+	ID_FILE_MRU_FILE11      "開啟這份文件"
+	ID_FILE_MRU_FILE12      "開啟這份文件"
+	ID_FILE_MRU_FILE13      "開啟這份文件"
+	ID_FILE_MRU_FILE14      "開啟這份文件"
+	ID_FILE_MRU_FILE15      "開啟這份文件"
+	ID_FILE_MRU_FILE16      "開啟這份文件"
+[!endif]
+	ID_NEXT_PANE            "切換至下一窗格\n下一個窗格"
+	ID_PREV_PANE            "切換至上一個窗格\n上一個窗格"
+[!if APP_TYPE_MDI]
+[!if DOCVIEW]
+	ID_WINDOW_NEW           "為使用中的文件開啟另一個視窗\n開新視窗"
+[!endif]
+	ID_WINDOW_ARRANGE       "將圖示排列在視窗底部\n排列圖示"
+	ID_WINDOW_CASCADE       "重疊排列視窗\n重疊顯示"
+	ID_WINDOW_TILE_HORZ     "視窗以不重疊的方式顯示\n並排顯示"
+	ID_WINDOW_TILE_VERT     "視窗以不重疊的方式顯示\n並排顯示"
+[!endif]
+	ID_WINDOW_SPLIT         "將使用中視窗切割成窗格\n分割視窗"
+	ID_EDIT_CLEAR           "清除選取範圍\n清除"
+	ID_EDIT_CLEAR_ALL       "清除所有的項目\n全部清除"
+	ID_EDIT_COPY            "複製選取項目並放到剪貼簿\n複製"
+	ID_EDIT_CUT             "剪下選取項目並放到剪貼簿\n剪下"
+	ID_EDIT_FIND            "尋找指定的文字\n尋找"
+	ID_EDIT_PASTE           "插入剪貼簿的內容\n貼上"
+	ID_EDIT_REPEAT          "重複上次的動作\n重複"
+	ID_EDIT_REPLACE         "用不同的文字取代指定文字\n取代"
+	ID_EDIT_SELECT_ALL      "選取整份文件\n全選"
+	ID_EDIT_UNDO            "復原上次的動作\n復原"
+	ID_EDIT_REDO            "取消復原上次的動作\n取消復原"
+[!if DOCKING_TOOLBAR]
+	ID_VIEW_TOOLBAR         "顯示或隱藏工具列\n切換工具列"
+[!endif]
+[!if STATUS_BAR]
+	ID_VIEW_STATUS_BAR      "顯示或隱藏狀態列\n切換狀態列"
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+	ID_EDIT_PASTE_LINK      "插入剪貼簿內容及一個連結到它的來源\n貼上連結"
+	ID_EDIT_PASTE_SPECIAL	"插入剪貼簿內容與選項\n選擇性貼上"
+	ID_OLE_INSERT_NEW       "插入新的內嵌物件\n新增物件"
+	ID_OLE_EDIT_LINKS       "編輯連結的物件\n編輯連結"
+	ID_OLE_VERB_FIRST       "啟動內嵌或連結的物件"
+	57873					"啟動內嵌或連結的物件"
+	57874					"啟動內嵌或連結的物件"
+	57875					"啟動內嵌或連結的物件"
+	ID_OLE_EDIT_CONVERT		"將物件轉換為不同類型\n轉換物件"
+[!endif]
+[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+	ID_RECORD_NEXT			"移動至下一筆資料錄\n下一筆資料錄"
+	ID_RECORD_PREV			"移動至上一筆資料錄\n上一筆資料錄"
+	ID_RECORD_LAST			"移動至最後一筆資料錄\n最後一筆資料錄"
+	ID_RECORD_FIRST			"移動至第一筆資料錄\n第一筆資料錄"
+[!endif]
+END
+
+STRINGTABLE  
+BEGIN
+	AFX_IDS_SCSIZE          "變更視窗大小"
+	AFX_IDS_SCMOVE          "變更視窗位置"
+	AFX_IDS_SCMINIMIZE      "將視窗縮成一個圖示"
+	AFX_IDS_SCMAXIMIZE      "將視窗放到最大"
+	AFX_IDS_SCNEXTWINDOW    "切換至下一個文件視窗"
+	AFX_IDS_SCPREVWINDOW    "切換至上一個文件視窗"
+	AFX_IDS_SCCLOSE         "關閉使用中的視窗並提示使用者儲存文件"
+	AFX_IDS_SCRESTORE       "將視窗還原成標準大小"
+	AFX_IDS_SCTASKLIST      "啟動工作清單"
+[!if APP_TYPE_MDI]
+	AFX_IDS_MDICHILD        "啟動這個視窗"
+[!endif]
+[!if PRINTING]
+	AFX_IDS_PREVIEW_CLOSE   "關閉預覽列印模式\n取消預覽"
+[!endif]
+END
+
+[!if LIST_VIEW]
+
+STRINGTABLE  
+BEGIN
+    ID_VIEW_SMALLICON       "使用小圖示顯示項目。\n小圖示"
+    ID_VIEW_LARGEICON       "使用大圖示顯示項目。\n大圖示"
+    ID_VIEW_LIST            "顯示清單項目。\n清單"
+    ID_VIEW_DETAILS         "顯示視窗中每個項目的詳細資訊。\n詳細資料"
+    ID_VIEW_LINEUP          "在格線內排列圖示。"
+    ID_VIEW_BYNAME          "依據字母順序對圖示進行排序。"
+END
+
+STRINGTABLE  
+BEGIN
+    ID_VIEW_AUTOARRANGE         "在格線上排列圖示。"
+END
+[!endif]
+#endif
+[!if MANIFEST]
+
+#ifdef _UNICODE
+IDR_MANIFEST	RT_MANIFEST	"res\\[!output PROJECT_NAME].manifest"
+#endif
+[!endif]
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// 已從 TEXTINCLUDE 3 資源產生。
+//
+
+[!if !SPLITTER && !PROJECT_STYLE_EXPLORER]
+#define _AFX_NO_SPLITTER_RESOURCES
+[!endif]
+[!if COMPOUND_DOC_NONE]
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+[!endif]
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+#include "[!output RES_PATH]\\[!output PROJECT_NAME].rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "afxres.rc"  	// 標準元件
+[!if PRINTING]
+#include "afxprint.rc"  // 列印/預覽列印資源
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+#include "afxolecl.rc"  // OLE 容器資源
+[!endif]
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+#include "afxolesv.rc"  // OLE 伺服器資源
+[!endif]
+[!if OLEDB || ODBC]
+#include "afxdb.rc"		// 資料庫資源
+[!endif]
+#endif
+[!if AUTOMATION]
+
+1 TYPELIB "[!output PROJECT_NAME].tlb"
+[!endif]
+#endif    // not APSTUDIO_INVOKED

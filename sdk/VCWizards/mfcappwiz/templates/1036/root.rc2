@@ -1,0 +1,13 @@
+//
+// [!output SAFE_PROJECT_NAME].RC2 - ressources que Microsoft Visual C++ ne modifie pas directement
+//
+
+#ifdef APSTUDIO_INVOKED
+#error ce fichier n'est pas modifiable par Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ajouter ici les ressources modifiées manuellement...
+
+/////////////////////////////////////////////////////////////////////////////
